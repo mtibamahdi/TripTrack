@@ -26,6 +26,7 @@
 }
 
 .name {
+  padding-top: 6px;
   font-size: 1.7rem;
   font-weight: 600;
   margin-right: auto;
