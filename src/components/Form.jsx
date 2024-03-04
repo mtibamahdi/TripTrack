@@ -6,6 +6,10 @@ import Message from './Message';
 import Spinner from './Spinner';
 import BackButton from './BackButton';
 import { useUrlPosition } from '../hooks/useUrlPosition';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { useCities } from '../contexts/CitiesContext';
+import { useNavigate } from 'react-router-dom';
 
 function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -28,9 +32,12 @@ function Form() {
   const [notes, setNotes] = useState('');
   const [emoji, setEmoji] = useState('');
   const [geoCodingError, setGeoCodingError] = useState('');
+  const { createCity, isLoading } = useCities();
+  const navigate = useNavigate();
 
   useEffect(
     function () {
+      if (!lat && !lat) return;
       async function fetchCityData() {
         try {
           setIsLoadingGeoCoding(true);
@@ -58,12 +65,32 @@ function Form() {
     [lat, lng]
   );
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const newCity = {
+      cityName,
+      country,
+      emoji,
+      date,
+      notes,
+      position: { lat, lng },
+    };
+    await createCity(newCity);
+    navigate('/app/cities');
+  }
+
   if (isLoadingGeoCoding) return <Spinner />;
+
+  if (!lat && !lat)
+    return <Message message="Start by clicking somewhere on the Map" />;
 
   if (geoCodingError) return <Message message={geoCodingError} />;
 
   return (
-    <form className={styles.form}>
+    <form
+      className={`${styles.form} ${isLoading ? styles.loading : ''}`}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -76,10 +103,11 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+        <DatePicker
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
+          dateFormat="dd/MM/yyyy"
+          selected={date}
+          onChange={(date) => setDate(date)}
         />
       </div>
 
