@@ -1,76 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
+      "cityName": "Pitarque",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2024-03-04T18:04:56.742Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "40.613952441166596",
+        "lng": "-0.5932617187500001"
       },
-      "id": "17806751"
+      "id": 1
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Montgivray",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-03-04T18:05:01.423Z",
+      "notes": "",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "46.58906908309185",
+        "lng": "1.9775390625000002"
       },
-      "id": "98443197"
+      "id": 2
     },
     {
-      "id": "cb98",
-      "cityName": "Foggaret Ezzaou",
+      "cityName": "Lessac",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-03-04T18:05:36.419Z",
+      "notes": "",
+      "position": {
+        "lat": "46.076585264866026",
+        "lng": "0.6553767265356214"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Djebilet Rosfa",
       "country": "Algeria",
       "emoji": "🇩🇿",
-      "date": "2024-03-04T17:22:22.054Z",
+      "date": "2024-03-04T18:05:54.206Z",
       "notes": "",
       "position": {
-        "lat": "27.059125784374068",
-        "lng": "3.3064450587094023"
-      }
-    },
-    {
-      "id": "1c9e",
-      "cityName": "Songwe District",
-      "country": "Tanzania, the United Republic of",
-      "emoji": "🇹🇿",
-      "date": "2024-03-04T17:22:31.368Z",
-      "notes": "",
-      "position": {
-        "lat": "-8.407168163601076",
-        "lng": "33.04687500000001"
-      }
-    },
-    {
-      "id": "7323",
-      "cityName": "Afif",
-      "country": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "date": "2024-03-04T17:22:42.192Z",
-      "notes": "",
-      "position": {
-        "lat": "24.04646399966658",
-        "lng": "42.890625"
-      }
+        "lat": "34.82521685858446",
+        "lng": "0.6957958758629702"
+      },
+      "id": 4
     }
   ]
 }
