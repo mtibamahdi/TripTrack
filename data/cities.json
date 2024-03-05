@@ -25,28 +25,28 @@
       "id": 2
     },
     {
-      "cityName": "Lessac",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-03-04T18:05:36.419Z",
-      "notes": "",
-      "position": {
-        "lat": "46.076585264866026",
-        "lng": "0.6553767265356214"
-      },
-      "id": 3
-    },
-    {
-      "cityName": "Djebilet Rosfa",
+      "cityName": "El Borma",
       "country": "Algeria",
       "emoji": "🇩🇿",
-      "date": "2024-03-04T18:05:54.206Z",
+      "date": "2024-03-05T06:24:27.827Z",
       "notes": "",
       "position": {
-        "lat": "34.82521685858446",
-        "lng": "0.6957958758629702"
+        "lat": "30.24513148884185",
+        "lng": "7.114675756272862"
       },
       "id": 4
+    },
+    {
+      "cityName": "El Hamma",
+      "country": "Tunisia",
+      "emoji": "🇹🇳",
+      "date": "2024-03-05T06:25:42.861Z",
+      "notes": "",
+      "position": {
+        "lat": "33.86683197174525",
+        "lng": "9.793485643069847"
+      },
+      "id": 5
     }
   ]
 }
