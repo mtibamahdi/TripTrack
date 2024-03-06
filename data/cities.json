@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Pitarque",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-03-04T18:04:56.742Z",
-      "notes": "",
-      "position": {
-        "lat": "40.613952441166596",
-        "lng": "-0.5932617187500001"
-      },
-      "id": 1
-    },
-    {
       "cityName": "Montgivray",
       "country": "France",
       "emoji": "🇫🇷",
@@ -25,18 +13,6 @@
       "id": 2
     },
     {
-      "cityName": "El Borma",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2024-03-05T06:24:27.827Z",
-      "notes": "",
-      "position": {
-        "lat": "30.24513148884185",
-        "lng": "7.114675756272862"
-      },
-      "id": 4
-    },
-    {
       "cityName": "El Hamma",
       "country": "Tunisia",
       "emoji": "🇹🇳",
@@ -47,6 +23,54 @@
         "lng": "9.793485643069847"
       },
       "id": 5
+    },
+    {
+      "cityName": "I-n-Amenas",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2024-03-05T06:45:58.283Z",
+      "notes": "xxxxxxx",
+      "position": {
+        "lat": "28.463052900609902",
+        "lng": "9.443939787041902"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Idles",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2025-03-02T06:46:08.000Z",
+      "notes": "Hello",
+      "position": {
+        "lat": "24.871447123804312",
+        "lng": "6.940380790067461"
+      },
+      "id": 7
+    },
+    {
+      "cityName": "Orani",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-03-05T23:41:13.448Z",
+      "notes": "",
+      "position": {
+        "lat": "40.24833555613268",
+        "lng": "9.181844455985974"
+      },
+      "id": 9
+    },
+    {
+      "cityName": "Portalrubio de Guadamejud",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-03-06T00:16:36.419Z",
+      "notes": "A7la Madrid",
+      "position": {
+        "lat": "40.28804893702304",
+        "lng": "-2.6427721973578393"
+      },
+      "id": 10
     }
   ]
 }
