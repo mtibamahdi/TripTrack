@@ -1,0 +1,10 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[build]
+  functions= "netlify/functions/"
+  
+[build.environment]
+  BASE_DIR = "/"

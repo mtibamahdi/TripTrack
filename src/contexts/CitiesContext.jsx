@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from 'react';
 
-const BASE_URL = 'http://localhost:9000';
+const BASE_URL = '/.netlify/functions';
 
 const CitiesContext = createContext();
 
@@ -51,8 +51,9 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       try {
         dispatch({ type: 'loading' });
-        const res = await fetch(`${BASE_URL}/cities`);
+        const res = await fetch(`${BASE_URL}/getcities`);
         const data = await res.json();
+        console.log(data);
         dispatch({ type: 'cities/loaded', payload: data });
       } catch {
         dispatch({
@@ -68,7 +69,8 @@ function CitiesProvider({ children }) {
     if (Number(id) === currentCity.id) return;
     try {
       dispatch({ type: 'loading' });
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      // const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const res = await fetch(`${BASE_URL}/getcity?id=${id}`);
       const data = await res.json();
       dispatch({ type: 'city/loaded', payload: data });
     } catch {
@@ -82,12 +84,9 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     try {
       dispatch({ type: 'loading' });
-      const res = await fetch(`${BASE_URL}/cities`, {
+      const res = await fetch(`${BASE_URL}/createcity`, {
         method: 'POST',
         body: JSON.stringify(newCity),
-        headers: {
-          'Content-Type': 'application/json',
-        },
       });
       const data = await res.json();
       dispatch({ type: 'city/created', payload: data });
@@ -99,7 +98,7 @@ function CitiesProvider({ children }) {
   async function deleteCity(id) {
     try {
       dispatch({ type: 'loading' });
-      await fetch(`${BASE_URL}/cities/${id}`, {
+      await fetch(`${BASE_URL}/deletecity?id=${id}`, {
         method: 'DELETE',
       });
       dispatch({ type: 'city/deleted', payload: id });
